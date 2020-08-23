@@ -7,7 +7,7 @@
 
 <div class="row">
   <div class="col">
-    <table class="table table-hover table-striped table-bordered table-responsive-sm table-sm">
+    <table class="table table-hover table-striped table-bordered table-sm">
       <thead>
         <tr>
           <th style="cursor: pointer;text-align:center;">Id</th>
@@ -16,10 +16,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td style="cursor: pointer;text-align:center"></td>
-          <td style="cursor: pointer;text-align:center"></td>
-          <td style="cursor: pointer;text-align:center"></td>
+        <tr *ngFor=" let article of articles">
+          <td style="cursor: pointer;text-align:center">{{article.id}}</td>
+          <td style="cursor: pointer;text-align:center">{{article.libelle}}</td>
+          <td style="cursor: pointer;text-align:center">{{article.prix}} Euro</td>
         </tr>
       </tbody>
     </table>

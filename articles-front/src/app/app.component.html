@@ -1,14 +1,76 @@
 <header>
-    <nav>
-      <ul>
-          <li><a routerLink="/">Accueil</a></li>
-        <li><a routerLink="/article">Articles</a></li>
-        <li><a routerLink="/creerArticle">Créer un article</a></li>
+  <nav class="navbar navbar-expand bg-light">
+    <a class="navbar-brand" routerLink="/">Accueil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/article">Articles<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/creerArticle">Créer un article</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
+   
+</header>
   
-  <main>
-    <router-outlet></router-outlet>
-  </main>
-  
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3 flex-center bg-light">
+
+  <!-- Footer Elements -->
+  <div class="container " >
+
+    <!-- Grid row-->
+    <div class="row text-center">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class=" flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://github.com/Souley313/articles-app"> Souley313</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
